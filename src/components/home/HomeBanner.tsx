@@ -78,7 +78,7 @@ export default function BannerSlider() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
-            className=" p-8 lg:w-[21%] rounded-tl-[30px] overflow-hidden  bg-white md:w-[65%] w-full"
+            className=" p-8 lg:w-[21%] rounded-tl-[30px] overflow-hidden border bg-white md:w-[65%] w-full"
           >
             <motion.div variants={fadeIn("right", "tween", 0.1, 1)}>
               <div>
@@ -104,7 +104,7 @@ export default function BannerSlider() {
             <div className='flex flex-nowrap gap-3 mb-5'><div className="text-4xl font-bold   border border-white p-3 max-w-max rounded-lg">
                 {points.icon}
                 </div>
-                <h4 className="leading-normal text-xl font-semibold  group-hover:text-green-900 duration-200">
+                <h4 className="leading-normal text-xl font-semibold   duration-200">
                   {points.title}
                 </h4>
                 </div>
