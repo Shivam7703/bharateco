@@ -136,10 +136,10 @@ export default Header;
 function RightSide() {
   return (
     <div className="flex flex-wrap gap-2 items-center flex-row h-full">
-      <a href="tel:+918700301161">
+      <a href="tel:+911234567890">
         <button className="bg-main  px-6 py-3 rounded-lg text-white font-bold flex items-center group hover:bg-zinc-800 transition-all">
           <BiSolidPhoneCall className="mr-2 text-xl group-hover:scale-x-[-1] transition-all"/>
-          +91 87003 01161
+          +91 1234567890
         </button>  
       </a>
     </div>
