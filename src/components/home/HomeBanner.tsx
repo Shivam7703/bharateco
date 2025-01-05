@@ -71,7 +71,7 @@ export default function BannerSlider() {
           </AnimatePresence>
          
       {/* Slider Bottom */}
-      <section className="flex flex-wrap items-stretch  justify-between max-lg:gap-y-6 md:px-32 px-6 md:sticky md:-mt-28 mt-10 z-40">
+      <section className="flex flex-wrap items-stretch  justify-between max-lg:gap-y-6 md:px-32 px-6 md:sticky md:-mt-16 mt-10 z-40">
           
           <motion.div
             variants={staggerContainer(0.1, 0)} // Adjusted stagger settings
