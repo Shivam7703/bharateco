@@ -1,15 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { car } from "@/assets";
-import { TbSpiral } from "react-icons/tb";
-import { MdPrivacyTip } from "react-icons/md";
-import { GrThreeDEffects } from "react-icons/gr";
-import { AiFillSafetyCertificate } from "react-icons/ai";
 import { benefit } from "@/data/homeData";
 
 function Benifit() {
   return (
-    <section className="lg:px-28 lg:py-20 sm:p-12 p-7 flex  flex-wrap justify-between items-center  max-lg:gap-4  bg-back">
+    <section className="lg:px-28 lg:py-24 sm:p-12 p-7 flex  flex-wrap justify-between items-center  max-lg:gap-4  bg-back">
       <div className="w-full text-center flex flex-col items-center !gap-y-4 mb-8 md:mb-16">
         {benefit?.title1 && <h4 className='text-green3 bg-[#E1F1D8] px-7 mb-3 font-bold text-sm rounded-lg py-3 w-max'>{benefit?.title1}</h4>}
           {benefit?.title2 && <h2 className='text-zinc-800 text-2xl md:text-4xl font-bold'>{benefit?.title2}</h2>}
