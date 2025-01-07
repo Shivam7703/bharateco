@@ -1,6 +1,8 @@
 import AboutSection from "@/components/home/AboutSection";
 import Benifit from "@/components/home/benifit";
 import BannerSlider from "@/components/home/HomeBanner";
+import Partner from "@/components/home/partner";
+import ServiceSlider from "@/components/home/services";
 
 
 export default function Home() {
@@ -9,6 +11,8 @@ export default function Home() {
 <BannerSlider/>
 <AboutSection/>
 <Benifit/>
+<Partner/>
+<ServiceSlider/>
   </>
   );
 }

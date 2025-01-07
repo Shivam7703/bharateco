@@ -23,6 +23,8 @@ body {
 .bg-back{
   background: url(../assets/home/background-1.jpg);
 }
+
+
 .swiperstyle1 {
   .swiper-button-next::after,
   .swiper-button-prev::after {

@@ -1,4 +1,10 @@
 import { about, banner, car, logo2 } from "@/assets";
+import { FaRoadCircleCheck } from "react-icons/fa6";
+import { IoHome } from "react-icons/io5";
+import { LiaChargingStationSolid } from "react-icons/lia";
+import { MdWorkHistory } from "react-icons/md";
+import { PiPlugChargingFill } from "react-icons/pi";
+import { SiTestcafe } from "react-icons/si";
 import { TbSpiral } from "react-icons/tb";
 
 export const sliderContent = [
@@ -93,7 +99,72 @@ points :[
 ]
 }
 
+export const servicedata = {
+  title1:"Services",
+  title2:"We are best service Provider for Petrolium",
+para: "We are best service Provider for We are best service Provider for We are best service Provider for ",
+services:[
+  {
+    id: 1,
+    title: "Service1",
+    text:
+      "Bioethanol, commonly referred to as biofuel or simply ethanol, is a type of renewable fuel that is produced from biomass, typically crops like corn, sugarc.",
+    icon: <LiaChargingStationSolid />,
+    img: banner,
+    slug:"#"
 
+  },
+  {
+    id: 2,
+    title: "Service2",
+    text:
+    "Bioethanol, commonly referred to as biofuel or simply ethanol, is a type of renewable fuel that is produced from biomass, typically crops like corn, sugarc.",
+    icon: <PiPlugChargingFill />
+    ,
+    img: banner,
+    slug:"#"
+
+  },
+  {
+    id: 3,
+    title: "Service3",
+    text:
+    "Bioethanol, commonly referred to as biofuel or simply ethanol, is a type of renewable fuel that is produced from biomass, typically crops like corn, sugarc.",
+    icon: <MdWorkHistory /> ,
+    img: banner,
+    slug:"#"
+  },
+  {
+    id: 4,
+    title: "Service4",
+    text:
+    "Bioethanol, commonly referred to as biofuel or simply ethanol, is a type of renewable fuel that is produced from biomass, typically crops like corn, sugarc.",
+    icon: <IoHome />      ,
+    img: banner,
+    slug:"#"
+
+  },
+  {
+    id: 5,
+    title: "Service5",
+    text:
+    "Bioethanol, commonly referred to as biofuel or simply ethanol, is a type of renewable fuel that is produced from biomass, typically crops like corn, sugarc.",
+    icon: <FaRoadCircleCheck />,
+    img: banner,
+    slug:"#"
+
+  },
+  {
+    id: 6,
+    title: "Service6",
+    text:
+    "Bioethanol, commonly referred to as biofuel or simply ethanol, is a type of renewable fuel that is produced from biomass, typically crops like corn, sugarc.",
+    icon: <SiTestcafe />      ,
+    img: banner,
+    slug:"#"
+
+  },
+]};
 
 export const footer = {
     logo: logo2,

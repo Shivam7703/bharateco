@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { aboutdata } from '@/data/homeData';
 import { motion } from "framer-motion";
 import { FaCheckCircle } from 'react-icons/fa';
-import { fadeIn, sliderText, staggerContainer} from '@/utils/motion';
+import { fadeIn,  staggerContainer} from '@/utils/motion';
 
 function AboutSection() {
   return (
