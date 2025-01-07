@@ -18,15 +18,11 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
-
+.bg-back{
+  background: url(../assets/home/background-1.jpg);
+}
 .swiperstyle1 {
   .swiper-button-next::after,
   .swiper-button-prev::after {

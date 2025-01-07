@@ -1,5 +1,5 @@
-import { about, banner, logo2 } from "@/assets";
-import { img } from "motion/react-client";
+import { about, banner, car, logo2 } from "@/assets";
+import { TbSpiral } from "react-icons/tb";
 
 export const sliderContent = [
   {
@@ -48,6 +48,52 @@ export const aboutdata ={
   }],
   title4:"Join us at Bharat Ecofuels and be part of the change!"
 } 
+
+
+export const benefit = {
+title1: "Certified By Government Of India",
+title2: "Benefits of Biofuels",
+para: "Biofuels reduce carbon emissions, promote energy security, create jobs, support rural economies, and decrease reliance on fossil fuels. Embrace renewable energy for a sustainable and eco-friendly future.",
+img:car,
+points :[
+  {id:1,
+    icon:<TbSpiral />,
+    heading:"INDIA based productions",
+    text:"There is growing demand for Biofuel as it is safe alternative to traditional fuel."
+  },
+
+  {id:2,
+    icon:<TbSpiral />,
+    heading:"Employment opportunities",
+    text:"Join, Work and Succeed."
+  },
+
+  {id:3,
+    icon:<TbSpiral />,
+    heading:"85% pollution reduction",
+    text:"Go green, Breathe clean."
+  },
+
+  {id:4,
+    icon:<TbSpiral />,
+    heading:"Additional mileage best in quality fuel and GST benefit",
+    text:"Fuel for your engine."
+  },
+
+  {id:5,
+    icon:<TbSpiral />,
+    heading:"85% pollution reduction",
+    text:"Go green, Breathe clean."
+  },
+  {id:6,
+    icon:<TbSpiral />,
+    heading:"85% pollution reduction",
+    text:"Go green, Breathe clean."
+  }
+]
+}
+
+
 
 export const footer = {
     logo: logo2,
