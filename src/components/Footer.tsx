@@ -14,7 +14,7 @@ export default function Footer({ footer }: any) {
       {/* NewsLetter Section  */}
      
       {/* Footer links section  */}
-      <div className="grid grid-cols-2 pb-5 sm:grid-cols-3 md:grid-cols-12">
+      <div className="grid grid-cols-3 pb-5 sm:grid-cols-6 lg:grid-cols-12">
         <div className="col-span-3 flex flex-col gap-y-2">
         <Image
           src={footer?.logo}
