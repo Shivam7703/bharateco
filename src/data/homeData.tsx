@@ -100,9 +100,9 @@ points :[
 }
 
 export const servicedata = {
-  title1:"Services",
+  title1:"Our Services",
   title2:"We are best service Provider for Petrolium",
-para: "We are best service Provider for We are best service Provider for We are best service Provider for ",
+para: "We are best service Provider for We are best service Provider for We are best service Provider for service Provider for Petrolium",
 services:[
   {
     id: 1,
