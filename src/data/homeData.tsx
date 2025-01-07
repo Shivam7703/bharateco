@@ -166,6 +166,61 @@ services:[
   },
 ]};
 
+
+export  const blogData = {
+  title1:"Blogs & News",
+  title2:"Stay Updated With our Latest News And Blogs",
+para: "We are best service Provider for We are best service Provider for We are best service Provider for service Provider for Petrolium",
+blogs:[
+  {
+    id: 1,
+    title: "Learn more about the Best Electric Cars and Charging Time",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    date: "05/09/23",
+    img: banner,
+  },
+  {
+    id: 2,
+    title: "Learn more about the Best Electric Cars and Charging Time",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    date: "15/12/23",
+    img: banner,
+  },
+  {
+    id: 3,
+    title: "Learn more about the Best Electric Cars and Charging Time",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    date: "05/09/24",
+    img: banner,
+  },
+  {
+    id: 4,
+    title: "Learn more about the Best Electric Cars and Charging Time",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    date: "07/03/24",
+    img: banner,
+  },{
+    id: 5,
+    title: "Learn more about the Best Electric Cars and Charging Time",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    date: "15/09/24",
+    img: banner,
+  },
+  {
+    id: 6,
+    title: "Learn more about the Best Electric Cars and Charging Time",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    date: "01/07/24",
+    img: banner,
+  },
+]};
+
 export const footer = {
     logo: logo2,
     text: "lorem At Bharat Ecofuels, we are revolutionizing the biofuel industry and transforming the lives of millions of",

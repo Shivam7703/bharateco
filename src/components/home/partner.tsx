@@ -22,7 +22,7 @@ function Partner() {
             <h2 className='md:text-4xl text-3xl font-bold'>Get a Eco-friendly option for a sustainable future</h2>
             <p>Install Your Own Biofuel Pump Station In Compliance With Government Of India.</p>
             <Link href={"/"} className="w-min mt-3">
-            <div className=" rounded-3xl  text-nowrap px-6 py-2 hover:bg-green3 border border-black bg-black hover:border-white text-white duration-300 ">
+            <div className=" rounded-3xl  text-nowrap px-6 py-2 hover:bg-green3 border border-black bg-black hover:border-white text-white duration-300 shadow-lg">
               <p className="text-base font-semibold">Become a Partner</p>
             </div>
           </Link>
