@@ -98,13 +98,13 @@ export default function Blogs() {
       </Swiper>
 
       {/* Add navigation buttons */}
-
+{/* 
     
       <Link href={"/"} className="w-min mt-7">
             <div className=" rounded-3xl  text-nowrap px-6 py-2 hover:bg-green3 border border-black bg-black hover:border-white text-white duration-300 shadow-lg">
               <p className="text-base font-semibold">Load More</p>
             </div>
-          </Link>
+          </Link> */}
     </section>
   );
 }

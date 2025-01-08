@@ -74,16 +74,16 @@ const Header = ({ header }: any) => {
 
   return (
     <>
-   
+   {/* <div className="w-[20vw] h-[20vw] rounded-full "></div> */}
     <header
-      className={`fixed top-0 left-0 w-screen z-50 transition-all duration-300 
+      className={` top-0 left-0 w-screen z-50 transition-all duration-300 
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
-        ${isAtTop ? "bg-transparent hover:text-green2 text-white" : "bg-white shadow-lg"}`}
+        ${isAtTop ? "bg-transparent hover:text-green2 " : "fixed bg-white shadow-lg"}`}
     >
       <div className="hidden md:flex items-center justify-between h-24 md:h-20 px-5 lg:px-10">
         <Link href={header?.href || "/"}>
           <Image
-            src={isAtTop ? logo2 : logo}
+            src={logo}
             alt="logo"
             className="h-[12vw] max-h-20 w-min object-contain md:h-20"
           />
@@ -140,7 +140,7 @@ function RightSide() {
   return (
     <div className="flex flex-wrap gap-2 items-center flex-row h-full">
       <a href="tel:+911234567890">
-        <button className="bg-main  px-6 py-3 rounded-lg text-white font-bold flex items-center group hover:bg-zinc-800 transition-all">
+        <button className="bg-green3  px-6 py-3 rounded-lg text-white font-bold flex items-center group hover:bg-zinc-800 transition-all">
           <BiSolidPhoneCall className="mr-2 text-xl group-hover:scale-x-[-1] transition-all"/>
           +91 1234567890
         </button>  
