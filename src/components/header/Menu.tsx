@@ -12,7 +12,7 @@ const navItemsArray = [
 
 const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
   return (
-    <ul className={`hidden items-center lg:gap-x-5 md:gap-x-0 font-medium text-black md:flex`}>
+    <ul className={`hidden items-center lg:gap-x-5 md:gap-x-0 font-medium ${onTop ? "text-white" : "text-black"} md:flex`}>
       {navItemsArray?.map((item: any) => (
         <li key={item?.id} className="group relative transition-all">
           <Link
@@ -21,7 +21,7 @@ const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
             onClick={() => onItemClick(item.id, item.href)}
           >
             <span
-              className={`font px-4 py-3 transition-all hover:text-green3 hover:scale-105 duration-300 
+              className={`font px-4 py-3 transition-all hover:border-b-2 border-blue-700 hover:scale-105 duration-300 
              
               ${activeItemId === item.href ? "bg-main  rounded-md bg-opacity-90 text-white" : "bg-transparent"}`}
             >

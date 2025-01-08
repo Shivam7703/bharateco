@@ -74,16 +74,16 @@ const Header = ({ header }: any) => {
 
   return (
     <>
-   {/* <div className="w-[20vw] h-[20vw] rounded-full "></div> */}
+   
     <header
-      className={` top-0 left-0 w-screen z-50 transition-all duration-300 
+      className={`fixed top-0 left-0 w-screen z-50 transition-all duration-300 
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
-        ${isAtTop ? "bg-transparent hover:text-green2 " : "fixed bg-white shadow-lg"}`}
+        ${isAtTop ? "bg-transparent text-green-600" : "bg-white shadow-lg"}`}
     >
       <div className="hidden md:flex items-center justify-between h-24 md:h-20 px-5 lg:px-10">
         <Link href={header?.href || "/"}>
           <Image
-            src={logo}
+            src={isAtTop ? logo2 : logo}
             alt="logo"
             className="h-[12vw] max-h-20 w-min object-contain md:h-20"
           />
@@ -94,7 +94,7 @@ const Header = ({ header }: any) => {
           onTop={isAtTop}
           onItemClick={handleNavItemClick}
         />
-        <RightSide />
+        <RightSide onTop={isAtTop}/>
       </div>
 
       {/* Mobile Section */}
@@ -136,11 +136,11 @@ const Header = ({ header }: any) => {
 
 export default Header;
 
-function RightSide() {
+function RightSide(onTop :any) {
   return (
     <div className="flex flex-wrap gap-2 items-center flex-row h-full">
       <a href="tel:+911234567890">
-        <button className="bg-green3  px-6 py-3 rounded-lg text-white font-bold flex items-center group hover:bg-zinc-800 transition-all">
+        <button className={`${onTop ? "bg-green3" : "bg-green3"} px-6 py-3 rounded-lg text-white font-bold flex items-center group hover:bg-zinc-800 transition-all shadow-lg`}>
           <BiSolidPhoneCall className="mr-2 text-xl group-hover:scale-x-[-1] transition-all"/>
           +91 1234567890
         </button>  
