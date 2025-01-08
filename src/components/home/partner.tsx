@@ -18,7 +18,7 @@ function Partner() {
     >
 
       <motion.div
-        variants={fadeIn("right", "tween", 0.3, 1)} className='sm:w-[57%] w-full max-sm:text-center max-sm:items-center flex flex-col gap-3'>
+        variants={fadeIn("right", "tween", 0.3, 1)} className='sm:w-[57%] text-white w-full max-sm:text-center max-sm:items-center flex flex-col gap-3'>
             <h2 className='md:text-4xl text-3xl font-bold'>Get a Eco-friendly option for a sustainable future</h2>
             <p>Install Your Own Biofuel Pump Station In Compliance With Government Of India.</p>
             <Link href={"/"} className="w-min mt-3">

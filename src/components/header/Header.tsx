@@ -74,13 +74,11 @@ const Header = ({ header }: any) => {
 
   return (
     <>
-    <div className="w-full flex p-7 bg-white">
-
-    </div>
+   
     <header
-      className={`fixed top-0 left-0 w-screen z-50 bg-white transition-all duration-300 
+      className={`fixed top-0 left-0 w-screen z-50 transition-all duration-300 
         ${isVisible ? "translate-y-0" : "-translate-y-full"}
-        ${isAtTop ? "bg-transparent text-green-600" : " shadow-lg"}`}
+        ${isAtTop ? "bg-transparent hover:text-green2 text-white" : "bg-white shadow-lg"}`}
     >
       <div className="hidden md:flex items-center justify-between h-24 md:h-20 px-5 lg:px-10">
         <Link href={header?.href || "/"}>
