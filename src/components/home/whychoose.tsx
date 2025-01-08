@@ -34,7 +34,7 @@ export default function WhyChoose() {
 
           <ul className="">
     {whychooseData?.data?.map((points:any) => (
-        <li key={points.id} className="flex transition-all items-center gap-7 group py-7 border-b hover:border-main border-zinc-700 ">
+        <li key={points.id} className="flex transition-all items-center gap-7 group py-7 border-b hover:border-green1 border-zinc-700 ">
             <div className="text-5xl transition-all text-black group-hover:text-green2 group-hover:-translate-y-4 duration-500">{points.icon}</div>
             <div>
               <h3 className="font-bold text-xl mb-2 text-black group-hover:text-green2 duration-300">{points.title}</h3>
