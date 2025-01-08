@@ -21,7 +21,7 @@ const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
             onClick={() => onItemClick(item.id, item.href)}
           >
             <span
-              className={`font px-4 py-3 transition-all hover:border-b-2 border-blue-700 hover:scale-105 duration-300 
+              className={`font px-4 py-3 transition-all hover:text-green2 hover:scale-105 duration-300 
              
               ${activeItemId === item.href ? "bg-main  rounded-md bg-opacity-90 text-white" : "bg-transparent"}`}
             >
