@@ -60,7 +60,7 @@ export default function ServiceSlider() {
 
       <Swiper
         {...swiperOptions}
-        className={`mySwiper w-full max-w-fit px-5 mt-12 ${uniqueId}`}
+        className={`mySwiper w-full max-w-fit px-5 !mt-0 ${uniqueId}`}
       >
         {" "}
         {servicedata?.services?.map((cards: any) => (

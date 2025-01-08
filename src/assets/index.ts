@@ -4,10 +4,12 @@ import banner from "@/assets/home/Bannner1.jpg";
 import about from "@/assets/home/about.png";
 import car from "@/assets/home/car.png";
 import partner from "@/assets/home/partner.png";
+import whychoose from "@/assets/home/whychoose.png";
+import cl1 from "@/assets/home/cl-1.jpg";
 
 
 
 
 export {
-    logo , logo2, banner, about, car, partner
+    logo , logo2, banner, about, car, partner, whychoose, cl1
    }

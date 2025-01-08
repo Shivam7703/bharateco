@@ -1,11 +1,13 @@
-import { about, banner, car, logo2 } from "@/assets";
+import { about, banner, car, cl1, logo2 } from "@/assets";
 import { FaRoadCircleCheck } from "react-icons/fa6";
+import { GrVmMaintenance } from "react-icons/gr";
 import { IoHome } from "react-icons/io5";
 import { LiaChargingStationSolid } from "react-icons/lia";
 import { MdWorkHistory } from "react-icons/md";
 import { PiPlugChargingFill } from "react-icons/pi";
-import { SiTestcafe } from "react-icons/si";
-import { TbSpiral } from "react-icons/tb";
+import { SiTerraform, SiTestcafe } from "react-icons/si";
+import { TbRecharging, TbSpiral } from "react-icons/tb";
+import { VscActivateBreakpoints } from "react-icons/vsc";
 
 export const sliderContent = [
   {
@@ -220,6 +222,63 @@ blogs:[
     img: banner,
   },
 ]};
+
+export  const testimonialData = {
+  title1:"Testimonial",
+  title2:"What our client Says",
+para: "We are best service Provider for We are best service Provider for We are best service Provider for service Provider for Petrolium",
+testimonials:[
+  {
+    id: 1,
+    title: "R.M. Mathur",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    img: cl1,
+  },
+  {
+    id: 2,
+    title: "Shivam Goyal",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    img: cl1,
+  },
+  {
+    id: 3,
+    title: "Sageer Ansari",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    img: cl1,
+  },
+  
+]};
+
+
+export const whychooseData ={
+  title2:"Why Choose Bharat Eco Fuels",
+
+data :[{
+  id:1,
+  icon:<SiTerraform />        ,
+  title:"EV Site Identification",
+  text:"Our surveys help determine site conditions for the purpose of meeting technical and regulatory expectations.",
+},{
+  id:2,
+  icon:<TbRecharging />,
+  title:"EV Location Survey",
+  text:"Our surveys help determine site conditions for the purpose of meeting technical and regulatory expectations.",
+},{
+  id:3,
+  title:"Installation and Activation",
+  icon:<VscActivateBreakpoints />,
+  text:"This is to mean that our technicians have the right to handle everything from installation to activation to enable charging stations to run as from the inception.",
+},
+{
+  id:4,
+  title:"Charging Station Maintenance",
+  icon:<GrVmMaintenance />,
+  text:"Our surveys help determine site conditions for the purpose of meeting technical and regulatory expectations.",
+},]}
+
 
 export const footer = {
     logo: logo2,

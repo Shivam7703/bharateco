@@ -57,7 +57,7 @@ export default function Blogs() {
 
       <Swiper
         {...swiperOptions}
-        className={`mySwiper w-full max-w-fit px-5 mt-12 ${uniqueId}`}
+        className={`mySwiper w-full max-w-fit px-5 !mt-0 ${uniqueId}`}
       >
         {" "}
         {blogData?.blogs?.map((cards: any) => (
