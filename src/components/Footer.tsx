@@ -78,7 +78,7 @@ export default function Footer({ footer }: any) {
             ))}
           </ul>
         </div>
-        <div className="col-span-2 flex flex-col gap-y-2 md:pl-14 mt-5">
+        <div className="col-span-2 flex flex-col gap-y-2 md:pl-10 mt-5">
           <h4 className="my-2 text-xl font-semibold">{footer?.list2?.title}</h4>
           <ul className="space-y-2">
             {footer?.list2?.links?.map((d: any, i: number) => (
