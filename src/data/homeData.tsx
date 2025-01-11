@@ -1,10 +1,10 @@
 import { about, banner, car, cl1, logo2, sec1 } from "@/assets";
-import { FaBullseye, FaEye, FaRoadCircleCheck } from "react-icons/fa6";
+import { FaBullseye, FaEye, FaMapLocationDot, FaRoadCircleCheck } from "react-icons/fa6";
 import { GiDeadEye } from "react-icons/gi";
 import { GrVmMaintenance } from "react-icons/gr";
 import { IoHome } from "react-icons/io5";
 import { LiaBullseyeSolid, LiaChargingStationSolid } from "react-icons/lia";
-import { MdWorkHistory } from "react-icons/md";
+import { MdAttachEmail, MdWifiCalling3, MdWorkHistory } from "react-icons/md";
 import { PiPlugChargingFill } from "react-icons/pi";
 import { SiTerraform, SiTestcafe } from "react-icons/si";
 import { TbRecharging, TbSpiral } from "react-icons/tb";
@@ -361,3 +361,41 @@ export const footer = {
     }],
     title4:"Join us at Bharat Ecofuels and be part of the change!"
   } 
+
+
+
+
+
+
+  // contat Us
+
+  export const contactBanner ={
+    title:"Contact Us",
+    para:"lorem Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus",
+    slug:"contact-us",
+    img:banner
+  }
+
+  export const contactsec1 ={
+    title:"Contact Us",
+    para:"Please contact us, We are sure that you can receive our reply as soon as possible.",
+    detail:[{
+      id:1,
+      icon:<MdWifiCalling3 />,
+      title:"Call Us",
+      text:"(+91) 1800-214-122",
+      slug:"tel:+911800-214-122"
+    },{
+      id:2,
+      icon:<MdAttachEmail />,
+      title:"Email Us",
+      text:"sunrays@example.com",
+      slug:"mailto:sunrays@example.com"
+    },{
+      id:3,
+      icon:<FaMapLocationDot />,
+      title:"Address",
+      text:"lorem Consectetur adipiscing elit.",
+      slug:"#"
+    }]
+  }

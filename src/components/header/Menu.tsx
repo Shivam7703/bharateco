@@ -17,7 +17,7 @@ const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
             <span
               className={`font px-4 py-3 transition-all hover:text-green2 hover:scale-105 duration-300 
              
-              ${activeItemId === item.href ? "bg-main  rounded-md bg-opacity-90 text-green2" : "bg-transparent"}`}
+              ${activeItemId === item.href ? "bg-white  rounded-md bg-opacity-90 text-green3" : "bg-transparent"}`}
             >
               {item?.label}
             </span>
@@ -32,9 +32,9 @@ const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
                 <Link
                   key={nav.id}
                   href={nav.href || "#"}
-                  className={`hover:bg-main bg-opacity-30 flex cursor-pointer items-center py-1 pl-2 pr-8 hover:text-green2 
+                  className={`hover:bg-white bg-opacity-30 flex cursor-pointer items-center py-1 pl-2 pr-8 hover:text-green2 
                     ${
-                      activeItemId === nav.id ? " bg-main bg-opacity-30 backdrop-blur-xl" : "bg-transparent"
+                      activeItemId === nav.id ? " bg-white bg-opacity-30 backdrop-blur-xl" : "bg-transparent"
                     }`}
                   onClick={() => onItemClick(nav.id, nav.href)}
                 >

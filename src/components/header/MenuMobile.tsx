@@ -31,7 +31,7 @@ const MenuMobile: React.FC<MenuMobileProps> = ({
         <li key={item.id}>
           <Link
             href={item.href}
-            className={`block px-4 ${onTop ? 'text-white' : 'text-black'} bg-opacity-30 backdrop-blur-xl  py-2 ${activeItemId === item.href ? 'bg-main' : 'bg-transparent'}`}
+            className={`block px-4 ${onTop ? 'text-white' : 'text-black'} bg-opacity-30 backdrop-blur-xl  py-2 ${activeItemId === item.href ? 'bg-white' : 'bg-transparent'}`}
             onClick={() => onItemClick(item.id.toString(), item.href)}
           >
             {item.label}
@@ -61,7 +61,7 @@ const SingleNavItem: React.FC<SingleNavItemProps> = ({
     onItemClick(item.id.toString(), item.href);  // Update this line
   };
 
-  // ... rest of the component remains the same
+  // ... rest of the component rewhites the same
 
   
 
@@ -70,9 +70,9 @@ const SingleNavItem: React.FC<SingleNavItemProps> = ({
       <Link
         onClick={toggleItem}
         href={item.href ?? "#"}
-        className={`relative px-5 py-3 transition-all border-b border-zinc-200 hover:bg-pink1 hover:text-white ${activeItemId === item.id.toString() ? 'text-pink2' : 'text-black'}`}
+        className={`relative px-5 py-3 transition-all border-b-2 border-zinc-200 hover:bg-green1 hover:text-white ${activeItemId === item.id.toString() ? 'text-green3' : 'text-black'}`}
       >
-        {/* ... */}
+       
       </Link>
 
       {isItemOpen && item.subNav && item.subNav.length !== 0 && (
@@ -81,7 +81,7 @@ const SingleNavItem: React.FC<SingleNavItemProps> = ({
             <Link
               key={i}
               href={ch.href ?? "#"}
-              className={`flex cursor-pointer items-center py-1 pl-6 pr-8 hover:bg-pink2 hover:text-white ${activeItemId === ch.id.toString() ? 'text-pink2' : 'text-blue-950'}`}
+              className={`flex cursor-pointer items-center py-1 pl-6 pr-8 hover:bg-green2 hover:text-white ${activeItemId === ch.id.toString() ? 'text-green2' : 'text-blue-950'}`}
               onClick={() => onItemClick(ch.id.toString(), ch.href)}  // Update this line
             >
               {/* ... */}
