@@ -56,7 +56,7 @@ through the use of renewable energy sources specifically in the transport sector
           </ul>
         </motion.div>
       </motion.div>
-      <div className="lg:w-[50%] group w-full mt-5 md:rounded-tl-[100px]  relative">
+      <div className="lg:w-[50%] group w-full min-h-52 mt-5 md:rounded-tl-[100px]  relative">
         <div className="bg-green3 absolute group-hover:bg-zinc-800 group-hover:rounded-[40px] duration-500 min-w-36 shadow-lg bottom-20 max-lg:hidden z-10 -left-20 text-white rounded-tl-3xl p-6">
           <IoShieldCheckmarkSharp className=" md:text-5xl text-3xl" />
           <h3 className="text-2xl md:text-4xl font-semibold my-2">300k</h3>
@@ -72,7 +72,7 @@ through the use of renewable energy sources specifically in the transport sector
       </div>
 
       {/* 2nd part */}
-      <div className="lg:w-[50%] group w-full  relative  ">
+      <div className="lg:w-[50%] group w-full min-h-52  relative  ">
       <div className="bg-green3 absolute group-hover:bg-white group-hover:text-zinc-800 min-w-36 group-hover:rounded-[40px] duration-500 z-10 bottom-20 max-lg:hidden -right-20 text-white rounded-tr-3xl p-6">
           <IoShieldCheckmarkSharp className=" md:text-5xl text-3xl" />
           <h3 className="text-2xl md:text-4xl font-semibold my-2">300k</h3>
@@ -183,7 +183,7 @@ through the use of renewable energy sources specifically in the transport sector
           </ul>
         </motion.div>
       </motion.div>
-      <div className="lg:w-[50%] group w-full md:rounded-tl-[100px]  relative">
+      <div className="lg:w-[50%] group w-full min-h-52 md:rounded-tl-[100px]  relative">
         <div className="bg-green3 absolute group-hover:bg-zinc-800 group-hover:rounded-[40px] duration-500 min-w-36 shadow-lg bottom-28 max-lg:hidden z-10 -left-20 text-white rounded-tl-3xl p-6">
           <IoShieldCheckmarkSharp className=" md:text-5xl text-3xl" />
           <h3 className="text-2xl md:text-4xl font-semibold my-2">300k</h3>
