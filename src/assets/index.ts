@@ -9,11 +9,14 @@ import cl1 from "@/assets/home/cl-1.jpg";
 
 // about
 import sec1 from "@/assets/about/section1.png";
+import com from "@/assets/about/com.jpg";
+import env from "@/assets/about/env.png";
+import social from "@/assets/about/social.jpg";
 
 
 
 
 
 export {
-    logo , logo2, banner, about, car, partner, whychoose, cl1,sec1
+    logo , logo2, banner, about, car, partner, whychoose, cl1,sec1,com,env ,social
    }

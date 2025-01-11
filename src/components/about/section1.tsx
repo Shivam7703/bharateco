@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from "framer-motion";
-import { FaCheckCircle } from 'react-icons/fa';
 import { fadeIn,  staggerContainer} from '@/utils/motion';
 
 function Section1({aboutdata}:any) {
