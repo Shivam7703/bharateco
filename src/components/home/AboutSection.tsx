@@ -15,11 +15,11 @@ function AboutSection() {
              initial="hidden"
              whileInView="show"
              viewport={{ once: true, amount: 0.2 }}
-      className="sm:w-[45%] w-full"
+      className="sm:w-[45%] w-full "
     ><motion.div
     variants={fadeIn("right", "tween", 0.3, 1)}
-    className="space-y-7 "
-  >{aboutdata?.img && <Image src={aboutdata.img} alt='About' className='h-full w-full'/>}
+    className="space-y-7 overflow-hidden hover14"
+  >{aboutdata?.img && <Image src={aboutdata.img} alt='About' className=' h-full w-full object-contain'/>}
                  </motion.div></motion.div>
       <div className='sm:w-[49%] w-full space-y-5'>
       {aboutdata?.title1 && <h4 className='text-green3 bg-zinc-100 px-7 font-bold text-sm rounded-lg py-3 w-max'>{aboutdata?.title1}</h4>}

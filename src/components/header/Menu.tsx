@@ -1,14 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
+import { navItemsArray } from "@/data/homeData";
 
-const navItemsArray = [
-  { id: 1, label: "About", href: "about", latest: false },
-  { id: 2, label: "Services & Techs", href: "services", latest: false },
-  { id: 3, label: "Sustainability", href: "sustainability", latest: false },
-  { id: 4, label: "Blogs", href: "blogs", latest: false },
-  { id: 5, label: "Contact Us", href: "contact-us", latest: false },
-];
 
 const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
   return (
@@ -23,12 +17,12 @@ const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
             <span
               className={`font px-4 py-3 transition-all hover:text-green2 hover:scale-105 duration-300 
              
-              ${activeItemId === item.href ? "bg-main  rounded-md bg-opacity-90 text-white" : "bg-transparent"}`}
+              ${activeItemId === item.href ? "bg-main  rounded-md bg-opacity-90 text-green2" : "bg-transparent"}`}
             >
               {item?.label}
             </span>
             {item?.subNav && item.subNav?.length !== 0 && (
-              <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0" />
+              <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0 -ml-2" />
             )}
           </Link>
           {/* dropdown */}
@@ -38,7 +32,7 @@ const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
                 <Link
                   key={nav.id}
                   href={nav.href || "#"}
-                  className={`hover:bg-main bg-opacity-30 flex cursor-pointer items-center py-1 pl-2 pr-8 hover:text-white 
+                  className={`hover:bg-main bg-opacity-30 flex cursor-pointer items-center py-1 pl-2 pr-8 hover:text-green2 
                     ${
                       activeItemId === nav.id ? " bg-main bg-opacity-30 backdrop-blur-xl" : "bg-transparent"
                     }`}

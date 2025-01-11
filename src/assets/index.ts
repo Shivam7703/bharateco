@@ -7,9 +7,13 @@ import partner from "@/assets/home/partner.png";
 import whychoose from "@/assets/home/whychoose.png";
 import cl1 from "@/assets/home/cl-1.jpg";
 
+// about
+import sec1 from "@/assets/about/section1.png";
+
+
 
 
 
 export {
-    logo , logo2, banner, about, car, partner, whychoose, cl1
+    logo , logo2, banner, about, car, partner, whychoose, cl1,sec1
    }

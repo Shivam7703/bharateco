@@ -58,3 +58,33 @@ body {
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
+
+
+/* animation */
+.hover14 {
+  position: relative;
+}
+.hover14::before {
+  position: absolute;
+  top: 0;
+  left: -92%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.568) 100%
+  );
+  transform: skewX(-45deg);
+}
+.hover14:hover::before {
+  animation: shine 0.55s ease-in-out;
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}

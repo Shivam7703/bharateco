@@ -1,13 +1,36 @@
-import { about, banner, car, cl1, logo2 } from "@/assets";
-import { FaRoadCircleCheck } from "react-icons/fa6";
+import { about, banner, car, cl1, logo2, sec1 } from "@/assets";
+import { FaBullseye, FaEye, FaRoadCircleCheck } from "react-icons/fa6";
+import { GiDeadEye } from "react-icons/gi";
 import { GrVmMaintenance } from "react-icons/gr";
 import { IoHome } from "react-icons/io5";
-import { LiaChargingStationSolid } from "react-icons/lia";
+import { LiaBullseyeSolid, LiaChargingStationSolid } from "react-icons/lia";
 import { MdWorkHistory } from "react-icons/md";
 import { PiPlugChargingFill } from "react-icons/pi";
 import { SiTerraform, SiTestcafe } from "react-icons/si";
 import { TbRecharging, TbSpiral } from "react-icons/tb";
 import { VscActivateBreakpoints } from "react-icons/vsc";
+
+
+
+// homepage
+export const navItemsArray = [
+  { id: 1, label: "About", href: "about"},
+  { id: 2, label: "Services", href: "services",
+    subNav:[{
+      id: 1, label: "Bio Diesel", href: "bio-diesel"
+    },
+    {
+      id: 2, label: "Bio Petrol", href: "bio-petrol"
+    },
+    {
+      id: 3, label: "Bio CNG", href: "bio-cng"
+    }]
+  },
+  { id: 3, label: "Our Outlets", href: "our-outlets"},
+  { id: 4, label: "Price Comparison", href: "pricing"},
+  { id: 5, label: "Blogs", href: "blogs"},
+  { id: 6, label: "Contact Us", href: "contact-us"},
+];
 
 export const sliderContent = [
   {
@@ -307,3 +330,34 @@ export const footer = {
       description: "Subscribe to our newsletter to get latest news and updates.",
     },
   };
+
+
+  // about Page
+  export const aboutBanner ={
+    title:"About Us",
+    para:"lorem Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus",
+    slug:"about-us",
+    img:banner
+  }
+
+  export const aboutsec1 ={
+    img: sec1,
+    img2:car,
+    title1:"About Us",
+    title2:"Transforming India's Future ",
+    title3:"with Bharat Ecofuels",
+        para: "Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.",
+    vision:[{
+      id:1,
+      icon:<GiDeadEye />,
+      heading:"Our Vision",
+      text:"Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore mesureme aliquaum suspendisse ultrices gravidisu.",
+    },
+    {
+      id:2,
+      icon:<LiaBullseyeSolid />,
+      heading:"Our Mission",
+      text:"Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore mesureme aliquaum suspendisse ultrices gravidisu.",
+    }],
+    title4:"Join us at Bharat Ecofuels and be part of the change!"
+  } 

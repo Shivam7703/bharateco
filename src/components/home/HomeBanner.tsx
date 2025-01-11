@@ -97,7 +97,7 @@ function HomeBannerCard({
           initial="initial"
           animate="animate"
           exit="exit"
-          transition={{ duration: 0.8, delay: 0.5 }}
+          transition={{ duration: 1, delay: 0.2 }}
           className="col-span-2 flex h-full w-full flex-col max-w-3xl  justify-center gap-7 md:px-11 max-md:items-center"
         >
           <h4 className="text-green1 font-bold md:text-xl text-lg">{welcome}</h4>

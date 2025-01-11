@@ -1,23 +1,13 @@
 // MenuMobile.tsx
 import React, { useState } from "react";
 import Link from "next/link";
+import { navItemsArray } from "@/data/homeData";
 
-
-
-
-
-const navItemsArray = [{id:1, label: "About", href : "about", latest:false,},
-    {id:2, label: "Services & Techs", href : "services", latest:false,},
-    { id: 3, label: "Sustainability", href: "sustainability", latest: false },
-  { id: 4, label: "Blogs", href: "blogs", latest: false },
-  { id: 5, label: "Contact Us", href: "contact-us", latest: false },
-]
 
 interface NavItem {
   id: number | string;
   label: string;
   href: string;
-  latest: Boolean;
   subNav?: NavItem[];
   iconImage?: string;
 }
