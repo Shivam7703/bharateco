@@ -93,7 +93,7 @@ export default function Outlet() {
           selectedService === service.id ? (
             <div key={service.id}>
               {/* Service Name */}
-              <h3 className="text-3xl md:text-5xl mt-4 text-black font-bold hover:text-green1">
+              <h3 className="text-4xl md:text-5xl mt-4 text-black font-bold hover:text-green1">
                 {service.name}
               </h3>
               {/* Cities List */}
