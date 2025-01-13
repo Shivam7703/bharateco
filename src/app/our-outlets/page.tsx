@@ -3,16 +3,16 @@ import Section2 from "@/components/about/section2";
 import Banner from "@/components/global/banner";
 import Testimonials from "@/components/home/testimonial";
 import Outlet from "@/components/outlet/outlet";
-import { aboutBanner,aboutsec1 } from "@/data/homeData";
+import {outletBanner } from "@/data/homeData";
 
 
 export default function About() {
   return (
     < >
-<Banner img ={aboutBanner?.img}
-title={aboutBanner.title}
-para={aboutBanner.para}
-slug={aboutBanner.slug}/>
+<Banner img ={outletBanner?.img}
+title={outletBanner.title}
+para={outletBanner.para}
+slug={outletBanner.slug}/>
 
 
 <Outlet/>

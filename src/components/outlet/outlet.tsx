@@ -3,6 +3,8 @@ import Image from "next/image";
 import { OutletDetails } from "@/data/homeData";
 import { useState } from "react";
 import { FaCircleChevronRight } from "react-icons/fa6";
+import { ImMenu } from "react-icons/im";
+import { RiCloseLine } from "react-icons/ri";
 
 export default function Outlet() {
   const data = [
@@ -37,16 +39,28 @@ export default function Outlet() {
   ];
 
   const [selectedService, setService] = useState<number>(1);
+  const [show, setShow] = useState(false);
+
+  function toggleMenu() {
+    setShow((prev) => !prev); // Toggle menu visibility
+  }
 
   return (
     <section className="mb-6 md:p-24 relative p-6 flex justify-between items-start max-md:gap-4">
       {/* Sidebar for Service List */}
-      <div className="sticky top-8 w-[30%]">
-        <ul className="bg-white text-zinc-900 md:p-4 py-3 w-full md:shadow-2xl md:text-lg text-sm rounded-xl">
+      <div
+        className={`md:sticky max-md:h-[90vh] md:top-8 left-0 absolute md:w-[30%] duration-300 ${
+          show ? "max-md:w-[70%] overflow-auto" : "max-md:w-0 overflow-hidden"
+        }`}
+      >
+        <ul className="bg-white text-zinc-900 p-5 w-full md:shadow-2xl md:text-lg text-sm rounded-xl">
           {data.map((service) => (
             <li
               key={service.id}
-              onClick={() => setService(service.id)}
+              onClick={() => {
+                setService(service.id);
+                toggleMenu();
+              }}
               className={`p-2 border-b my-2 font-normal max-md:text-center justify-between md:flex items-center transition-all rounded-xl hover:bg-main text-white ${
                 selectedService === service.id
                   ? "bg-green3 text-white"
@@ -61,7 +75,20 @@ export default function Outlet() {
       </div>
 
       {/* Main Content */}
-      <div className="w-[68%] md:space-y-11 space-y-5">
+      <div className="md:w-[68%] min-h-[92vh] w-full md:space-y-11 space-y-5">
+        {/* Mobile Menu Toggle Button */}
+        <div
+          onClick={toggleMenu}
+          className="float-right text-black text-4xl md:hidden font-bold duration-300"
+        >
+          {!show ? (
+            <ImMenu className="text-green3" />
+          ) : (
+            <RiCloseLine className="text-red-800" />
+          )}
+        </div>
+
+        {/* Content for Selected Service */}
         {OutletDetails.map((service) =>
           selectedService === service.id ? (
             <div key={service.id}>
@@ -72,10 +99,10 @@ export default function Outlet() {
               {/* Cities List */}
               {service.cities.map((city) => (
                 <div key={city.id} className="space-y-3 mt-4 md:mt-11">
-                  <h3 className="text-2xl md:text-3xl  text-zinc-800 font-bold ">
+                  <h3 className="text-2xl md:text-3xl text-zinc-800 font-bold">
                     {city.title1}
                   </h3>
-                  <p className="md:text-lg text-sm  font-medium text-zinc-700">
+                  <p className="md:text-lg text-sm font-medium text-zinc-700">
                     {city.text1}
                   </p>
                   <Image
@@ -83,9 +110,9 @@ export default function Outlet() {
                     alt={city.title1}
                     className="w-full h-full max-h-80 object-cover"
                     width={800}
-                    height={450} // Adjust dimensions as needed
+                    height={450}
                   />
-                  <p className="md:text-lg text-sm  font-semibold text-zinc-700">
+                  <p className="md:text-lg text-sm font-semibold text-zinc-700">
                     {city.text2}
                   </p>
                 </div>

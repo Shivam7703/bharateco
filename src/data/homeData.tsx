@@ -366,6 +366,13 @@ export const footer = {
 
 // our outlet
 
+export const outletBanner ={
+  title:"Our Outlets",
+  para:"lorem Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus",
+  slug:"about-us",
+  img:banner
+}
+
 export const OutletDetails = [
   {
       id:1,
