@@ -49,11 +49,11 @@ export default function Outlet() {
     <section className="mb-6 md:p-24 relative p-6 flex justify-between items-start max-md:gap-4">
       {/* Sidebar for Service List */}
       <div
-        className={`md:sticky max-md:h-[90vh] md:top-8 left-0 absolute md:w-[30%] duration-300 ${
+        className={`md:sticky max-md:h-[90vh] md:top-8 p-3 left-0 absolute md:w-[30%] duration-300 ${
           show ? "max-md:w-[70%] overflow-auto" : "max-md:w-0 overflow-hidden"
         }`}
       >
-        <ul className="bg-white text-zinc-900 p-5 w-full md:shadow-2xl md:text-lg text-sm rounded-xl">
+        <ul className="bg-white text-zinc-900 p-3 w-full md:shadow-2xl md:text-lg text-sm rounded-xl">
           {data.map((service) => (
             <li
               key={service.id}
