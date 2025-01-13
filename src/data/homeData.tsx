@@ -364,6 +364,181 @@ export const footer = {
 
 
 
+// our outlet
+
+export const OutletDetails = [
+  {
+      id:1,
+      name:"Andhra Pradesh",
+cities:[{
+  id:1,
+  title1:"City1",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:2,
+  title1:"City2",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:3,
+  title1:"City3",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},]
+  },
+ 
+  {
+    id:2,
+    name:"Arunachal Pradesh",
+cities:[{
+  id:1,
+  title1:"City1",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:2,
+  title1:"City2",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:3,
+  title1:"City3",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},]
+},
+
+{
+  id:3,
+  name:"Assam",
+cities:[{
+  id:1,
+  title1:"City1",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:2,
+  title1:"City2",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:3,
+  title1:"City3",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},]
+},
+
+{
+  id:4,
+  name:"Bihar",
+cities:[{
+  id:1,
+  title1:"City1",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:2,
+  title1:"City2",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:3,
+  title1:"City3",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},]
+},
+
+{
+  id:5,
+  name:"Chhattisgarh",
+cities:[{
+  id:1,
+  title1:"City1",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:2,
+  title1:"City2",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:3,
+  title1:"City3",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},]
+},
+
+{
+  id:6,
+  name:"Goa",
+cities:[{
+  id:1,
+  title1:"City1",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:2,
+  title1:"City2",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},
+
+{
+  id:3,
+  title1:"City3",
+  text1:"We assist in determining areas on the roads most suitable for setting up the EV charging station in order to be easily located by users. We place emphasis on selecting the optimum site in which to place EV charging stations to ensure the close vicinity of the users. This is good because if a driver gets into the car and needs to recharge the car soon, then he or she will be able to easily locate a charging station.",
+  img: banner,
+  text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
+},]
+},
+ 
+ 
+]
+
+
 
 
 
