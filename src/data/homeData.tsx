@@ -541,12 +541,16 @@ cities:[{
   text2:"Our team analyzes the  traffic and demand and makes conscious decisions about the patterns. and other features that make up the location to decide the best places to set the infrastructure. Such a placement makes use of figures to ascertain that the charging stations are positioned favorably in a way that they will benefit the most drivers. ",
 },]
 },
- 
- 
 ]
 
 
-
+// blog Page
+export const blogBanner ={
+  title:"Blogs & News",
+  para:"lorem Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus",
+  slug:"blogs",
+  img:banner
+}
 
 
   // contat Us
