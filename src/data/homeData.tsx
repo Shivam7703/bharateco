@@ -16,15 +16,15 @@ import { VscActivateBreakpoints } from "react-icons/vsc";
 export const navItemsArray = [
   { id: 1, label: "About", href: "about"},
   { id: 2, label: "Services", href: "services",
-    subNav:[{
-      id: 1, label: "Bio Diesel", href: "bio-diesel"
-    },
-    {
-      id: 2, label: "Bio Petrol", href: "bio-petrol"
-    },
-    {
-      id: 3, label: "Bio CNG", href: "bio-cng"
-    }]
+    // subNav:[{
+    //   id: 1, label: "Bio Diesel", href: "bio-diesel"
+    // },
+    // {
+    //   id: 2, label: "Bio Petrol", href: "bio-petrol"
+    // },
+    // {
+    //   id: 3, label: "Bio CNG", href: "bio-cng"
+    // }]
   },
   { id: 3, label: "Our Outlets", href: "our-outlets"},
   { id: 4, label: "Price Comparison", href: "pricing"},
@@ -552,6 +552,65 @@ export const blogBanner ={
   img:banner
 }
 
+
+// services
+export const serviceBanner ={
+  title:"Our services",
+  para:"lorem Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus",
+  slug:"services",
+  img:banner
+}
+
+export const services =[
+  {
+    id: 1,
+    title: "Bio Fuel",
+    text:
+      "lorem look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    img: banner,
+    slug:"services/detail"
+  },
+  {
+    id: 2,
+    title: "Bio Diesel",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    img: banner,
+    slug:"services/detail"
+
+  },
+  {
+    id: 3,
+    title: "Bio Diesel",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    img: banner,
+    slug:"services/detail"
+  },
+  {
+    id: 4,
+    title: "Bio Diesel",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    img: banner,
+    slug:"services/detail"
+  },{
+    id: 5,
+    title: "Bio Diesel",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    img: banner,
+    slug:"services/detail"
+  },
+  {
+    id: 6,
+    title: "Bio Diesel",
+    text:
+      "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
+    img: banner,
+    slug:"services/detail"
+  },
+]
 
   // contat Us
 

@@ -13,8 +13,6 @@ export default function About() {
 title={outletBanner.title}
 para={outletBanner.para}
 slug={outletBanner.slug}/>
-
-
 <Outlet/>
 <Testimonials/>
   </>
