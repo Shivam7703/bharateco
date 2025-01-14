@@ -11,18 +11,17 @@ const Menu = ({ activeItemId, onItemClick , onTop}: any) => {
         <li key={item?.id} className="group relative transition-all">
           <Link
             href={item?.href || "#"}
-            className="flex cursor-pointer items-center"
+            className={` ${activeItemId === item.href ? "bg-white  rounded-md bg-opacity-90 text-green3"
+               : "bg-transparent"} px-4 py-3 flex justify-center  cursor-pointer items-center gap-1`}
             onClick={() => onItemClick(item.id, item.href)}
           >
             <span
-              className={`font px-4 py-3 transition-all hover:text-green2 hover:scale-105 duration-300 
+              className={`font  transition-all hover:text-green2 hover:scale-105 duration-300 
              
-              ${activeItemId === item.href ? "bg-white  rounded-md bg-opacity-90 text-green3" : "bg-transparent"}`}
-            >
-              {item?.label}
+              `}>              {item?.label}
             </span>
             {item?.subNav && item.subNav?.length !== 0 && (
-              <IoIosArrowDown className="rotate-180 transition-all group-hover:rotate-0 -ml-2" />
+              <IoIosArrowDown className={`rotate-180 transition-all group-hover:rotate-0 `} />
             )}
           </Link>
           {/* dropdown */}

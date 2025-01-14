@@ -43,7 +43,7 @@ export default function Blogsection({data}:any) {
               </h3>
               <p className="text-zinc-600 text-sm">{cards.text}</p><br />
               <Link 
-                  href={"#"}
+                  href={"blogs/details"}
                   className=" duration-500  group-hover:bg-zinc-800 text-white px-16 bg-green3  text-center -mb-3 py-2  text-base  font-bold"
                 >
                   Read More

@@ -28,7 +28,7 @@ const Header = ({ header }: any) => {
     // Split the pathname and get the last part
     const lastSegment = pathname?.split("/").filter(Boolean).pop();
 
-    let path = lastSegment || "home";
+    let path = `/${lastSegment || "home"}`;
     // Store the last word (segment) in the state
     setActiveItem(path);
   }, [pathname]);

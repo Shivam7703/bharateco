@@ -14,22 +14,22 @@ import { VscActivateBreakpoints } from "react-icons/vsc";
 
 // homepage
 export const navItemsArray = [
-  { id: 1, label: "About", href: "about"},
-  { id: 2, label: "Services", href: "services",
-    // subNav:[{
-    //   id: 1, label: "Bio Diesel", href: "bio-diesel"
-    // },
-    // {
-    //   id: 2, label: "Bio Petrol", href: "bio-petrol"
-    // },
-    // {
-    //   id: 3, label: "Bio CNG", href: "bio-cng"
-    // }]
+  { id: 1, label: "About", href: "/about"},
+  { id: 2, label: "Services", href: "/services",
+    subNav:[{
+      id: 1, label: "Bio Diesel", href: "bio-diesel"
+    },
+    {
+      id: 2, label: "Bio Petrol", href: "bio-petrol"
+    },
+    {
+      id: 3, label: "Bio CNG", href: "bio-cng"
+    }]
   },
-  { id: 3, label: "Our Outlets", href: "our-outlets"},
-  { id: 4, label: "Price Comparison", href: "pricing"},
-  { id: 5, label: "Blogs", href: "blogs"},
-  { id: 6, label: "Contact Us", href: "contact-us"},
+  { id: 3, label: "Our Outlets", href: "/our-outlets"},
+  { id: 4, label: "Price Comparison", href: "/pricing"},
+  { id: 5, label: "Blogs", href: "/blogs"},
+  { id: 6, label: "Contact Us", href: "/contact-us"},
 ];
 
 export const sliderContent = [
@@ -568,7 +568,7 @@ export const services =[
     text:
       "lorem look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
     img: banner,
-    slug:"services/detail"
+    slug:"services/details"
   },
   {
     id: 2,
@@ -576,7 +576,7 @@ export const services =[
     text:
       "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
     img: banner,
-    slug:"services/detail"
+    slug:"services/details"
 
   },
   {
@@ -585,7 +585,7 @@ export const services =[
     text:
       "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
     img: banner,
-    slug:"services/detail"
+    slug:"services/details"
   },
   {
     id: 4,
@@ -593,14 +593,14 @@ export const services =[
     text:
       "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
     img: banner,
-    slug:"services/detail"
+    slug:"services/details"
   },{
     id: 5,
     title: "Bio Diesel",
     text:
       "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
     img: banner,
-    slug:"services/detail"
+    slug:"services/details"
   },
   {
     id: 6,
@@ -608,7 +608,7 @@ export const services =[
     text:
       "In this post, we take a look at the best electric cars currently on the market today and how long it would take to charge each to its full capacity.",
     img: banner,
-    slug:"services/detail"
+    slug:"services/details"
   },
 ]
 

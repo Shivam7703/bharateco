@@ -41,23 +41,15 @@ export default function Servicesection({data}:any) {
               <p className="text-zinc-600 text-sm text-justify">{cards.text}</p><br />
              <div className="w-full text-center"> <Link 
                   href={cards.slug || "services/detail"}
-                  className=" duration-500 !min-w-full !mx-auto group-hover:bg-zinc-800 text-white px-16 bg-green3  text-center -mb-3 py-2  text-base  font-bold"
-                >
+                  className=" duration-500 !min-w-full !mx-auto group-hover:bg-zinc-800 text-white px-16 bg-green3  text-center -mb-3 py-2  text-base  font-bold" >
                   Know More
                 </Link></div><br/>
               </div>
             </div>
           </div>
         ))}
-        {/* <div className={`${uniqueId}-next swiper-button-next !top-[34%]`}></div>
-
-<div className={`${uniqueId}-prev swiper-button-prev !top-[34%]`}></div> */}
       </div>
-
       {/* Add navigation buttons */}
-
-    
-     
     </section>
   );
 }
