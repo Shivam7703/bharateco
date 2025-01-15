@@ -17,7 +17,7 @@ export default function Blogsection({data}:any) {
                          </div>
       <div
         
-        className=" w-full max-w-fit  mt-6 flex flex-wrap justify-between  gap-y-6"
+        className=" w-full max-w-fit  mt-4 flex flex-wrap justify-between  gap-y-6"
       >
         {" "}
         {data?.blogs?.map((cards: any) => (
@@ -44,7 +44,7 @@ export default function Blogsection({data}:any) {
               <p className="text-zinc-600 text-sm max-sm:hidden">{cards.text}</p><br />
               <Link 
                   href={"blogs/details"}
-                  className=" duration-500 max-sm:scale-75  group-hover:bg-zinc-800 text-white px-10 bg-green3  text-center -mb-3 py-2  text-base  font-bold"
+                  className=" duration-500 max-sm:scale-50  group-hover:bg-zinc-800 text-white px-10 bg-green3  text-center -mb-3 py-2  text-base  font-bold"
                 >
                   Read More
                 </Link><br/><br/>

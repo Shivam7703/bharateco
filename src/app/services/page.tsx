@@ -10,7 +10,6 @@ function Service() {
             title={serviceBanner.title}
             para={serviceBanner.para}
             slug={serviceBanner.slug}/>
-
             <Servicesection data={services}/>
     </>
 

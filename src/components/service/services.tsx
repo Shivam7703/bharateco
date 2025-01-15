@@ -8,16 +8,14 @@ export default function Servicesection({data}:any) {
 
 
   return (
-    <section className="my-6 md:p-24 p-6 text-center relative slider1 flex flex-col items-center">
+    <section className="my-6 md:p-24 sm:p-14 p-4 text-center relative slider1 flex flex-col items-center">
        <div className="w-full text-center flex flex-col items-center !gap-y-4 mb-8 md:mb-16">
                    <h4 className='text-green3 bg-[#E1F1D8] px-7 mb-3 font-bold text-sm rounded-lg py-3 w-max'>Our Services </h4>
                      <h2 className='text-zinc-800 text-2xl md:text-4xl font-bold'>We Provide Best Petrolium Services</h2>
                        <p className='text-zinc-600 text-sm md:text-base max-w-4xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tenetur voluptatum, ratione hic iure numquam ipsa dolore, laboriosam eveniet suscipit nam tempora? In.</p>
                          </div>
       <div
-        
-        className=" w-full max-w-fit px-5 mt-6 flex flex-wrap justify-between  gap-y-6"
-      >
+        className=" w-full max-w-fit  mt-3 flex flex-wrap justify-between md:gap-y-6 gap-y-2" >
         {" "}
         {data?.map((cards: any) => (
           <div
