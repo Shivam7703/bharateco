@@ -20,7 +20,7 @@ export default function Servicedetail() {
 </p>
     
 
-        <h3 className="text-4xl font-bold">IS THERE A FUTURE BEYOND COAL?
+        <h3 className="md:text-4xl text-2xl font-bold">IS THERE A FUTURE BEYOND COAL?
         </h3>
         <p className="text-lg font-semibold text-zinc-700">In the fast-developing world, coal is the largest contributor to the human-made increase of CO2 in the atmosphere. Its environmental impact spreads far across many areas, from air pollution, water, and waste management, up to the increased land uses.
         In the face of greenhouse gas emissions, industries are seeking a new way to manage their environmental impact and reduce the carbon footprint of production. In this article, we are focusing on the biocoal as an emerging trend to replace the fossil coals in the industry, and specifically in the metallurgic industry.</p>
