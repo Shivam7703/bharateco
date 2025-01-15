@@ -25,7 +25,7 @@ export default function Blogedetail() {
   const tags = ["Agency", "Business", "Renewable", "Sustainability"];
 
   return (
-    <section className="mb-6 md:p-24 relative p-3 flex flex-wrap justify-between items-start max-md:gap-4">
+    <section className="mb-6 md:p-24 relative p-3 flex flex-wrap justify-between items-start max-md:gap-6">
       <article className="md:w-[66%] shadow-lg w-full p-5 text-zinc-800 md:space-y-12 space-y-4 max-md:mt-5">
       <Image src={banner} alt="service" className="w-full h-full" />
 
