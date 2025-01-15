@@ -7,7 +7,7 @@ export default function Servicedetail() {
 
 
   return (
-    <section className="mb-6 md:p-24 relative p-3 flex flex-wrap justify-between items-start max-md:gap-6">
+    <section className="mb-6 md:p-24 relative p-3 flex flex-wrap justify-between items-start max-md:gap-7">
     
      <div className="md:w-[66%] shadow-lg w-full p-5 text-zinc-800 md:space-y-12 space-y-4 max-md:mt-5">
  
@@ -122,7 +122,7 @@ export default function Servicedetail() {
           </form>
         </div>
 
-        <div className="p-8 flex items-center flex-col bg-zinc-800  rounded-xl mt-8 shadow-xl">
+        <div className="p-8 flex items-center flex-col bg-zinc-800  rounded-xl md:mt-8 mt-5 shadow-xl">
             <h3 className="mb-6 text-white text-xl font-bold">Download Brochure</h3>
         <Link href="#"
               className="px-10 py-4 rounded-lg bg-white text-black overflow-hidden group  relative hover:bg-main hover:text-white transition-all ease-out duration-300 "

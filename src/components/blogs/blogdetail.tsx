@@ -25,7 +25,7 @@ export default function Blogedetail() {
   const tags = ["Agency", "Business", "Renewable", "Sustainability"];
 
   return (
-    <section className="mb-6 md:p-24 relative p-3 flex flex-wrap justify-between items-start max-md:gap-6">
+    <section className="mb-6 md:p-24 relative p-3 flex flex-wrap justify-between items-start max-md:gap-7">
       <article className="md:w-[66%] shadow-lg w-full p-5 text-zinc-800 md:space-y-12 space-y-4 max-md:mt-5">
       <Image src={banner} alt="service" className="w-full h-full" />
 
@@ -83,7 +83,7 @@ export default function Blogedetail() {
           </div>
         </div>
 
-        <div className="w-full bg-gray-100 rounded-md p-5 md:p-10 mt-8">
+        <div className="w-full bg-gray-100 rounded-md p-5 md:p-10 md:mt-8 mt-5">
           <h6 className="text-xl font-bold mb-3">Tags</h6>
           <div className="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
             <div className="w-16 h-full bg-green3 rounded-xl"></div>
@@ -101,7 +101,7 @@ export default function Blogedetail() {
           </div>
         </div>
 
-        <div className="p-8 flex items-center flex-col bg-zinc-800 rounded-xl mt-8 shadow-xl">
+        <div className="p-8 flex items-center flex-col bg-zinc-800 rounded-xl md:mt-8 mt-5 shadow-xl">
           <h3 className="mb-6 text-white text-xl font-bold">Download Brochure</h3>
           <Link
             href="#"
