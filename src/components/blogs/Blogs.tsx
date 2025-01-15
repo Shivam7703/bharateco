@@ -23,7 +23,7 @@ export default function Blogsection({data}:any) {
         {data?.blogs?.map((cards: any) => (
           <div
             key={cards.id}
-            className="md:mb-12 w-full sm:w-[48%] md:w-[31%] p-4  rounded-2xl  "
+            className="md:mb-12 w-[49%] md:w-[31%] p-4  rounded-2xl  "
           >
             <div className=" w-full  h-full overflow-hidden  group  shadow-xl bg-white rounded-xl">
               <div className="relative overflow-hidden w-full h-60">
