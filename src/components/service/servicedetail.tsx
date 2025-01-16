@@ -7,7 +7,7 @@ export default function Servicedetail() {
 
 
   return (
-    <section className="mb-6 md:p-24 relative p-3 flex flex-wrap justify-between items-start max-md:gap-7">
+    <div className="mb-6 md:p-24 relative p-3 flex flex-wrap justify-between items-start max-md:gap-7">
     
      <div className="md:w-[66%] shadow-lg w-full p-5 text-zinc-800 md:space-y-12 space-y-4 max-md:mt-5">
  
@@ -134,6 +134,6 @@ export default function Servicedetail() {
         </div>
      </div>
 
-    </section>
+    </div>
   );
 }

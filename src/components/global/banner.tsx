@@ -23,7 +23,7 @@ export default function Banner({title, para, img, slug}:any) {
         <AnimatePresence>
               <div className="w-full h-max relative">
                 <Image
-                  className="w-full h-[50vh] md:h-[40vh]  lg:h-[30vw] object-cover object-center"
+                  className="w-full h-[50vh] md:h-[40vh]  lg:h-[32vw] object-cover object-center"
                   src={img || banner}
                   alt="sliding image"
                   loading="lazy"
