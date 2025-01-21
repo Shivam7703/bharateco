@@ -1,95 +1,91 @@
-// MenuMobile.tsx
 import React, { useState } from "react";
 import Link from "next/link";
-import { navItemsArray } from "@/data/homeData";
-
+import { IoIosArrowDown } from "react-icons/io";
+import { navItemsArray } from "@/data/homeData"; // Import directly like your Menu component
 
 interface NavItem {
   id: number | string;
   label: string;
   href: string;
   subNav?: NavItem[];
-  iconImage?: string;
 }
 
 interface MenuMobileProps {
-  navItemsArray: NavItem[];
-  setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsMobileMenuOpen: (value: boolean) => void;
   activeItemId: string | null;
-  onItemClick: (itemId: string, href: string) => void; 
-  onTop: Boolean;// Update this line
+  onItemClick: (href: string) => void;
+  onTop: boolean;
 }
 
-const MenuMobile: React.FC<MenuMobileProps> = ({ 
- onTop,
-  activeItemId, 
-  onItemClick 
+const MenuMobile: React.FC<MenuMobileProps> = ({
+  setIsMobileMenuOpen,
+  activeItemId,
+  onItemClick,
+  onTop
 }) => {
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
+
+  const toggleSubmenu = (itemId: string) => {
+    setOpenSubmenu(openSubmenu === itemId ? null : itemId);
+  };
+
+  const handleItemClick = (href: string) => {
+    onItemClick(href);
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <ul className="w-full flex flex-col ">
-      {navItemsArray.map((item) => (
-        <li key={item.id}>
-          <Link
-            href={item.href}
-            className={`block px-4 ${onTop ? 'text-white' : 'text-black'} bg-opacity-30 backdrop-blur-xl  py-2 ${activeItemId === item.href ? 'bg-white' : 'bg-transparent'}`}
-            onClick={() => onItemClick(item.id.toString(), item.href)}
-          >
-            {item.label}
-          </Link>
+    <ul className="w-full flex flex-col">
+      {navItemsArray?.map((item: NavItem) => (
+        <li key={item.id} className="border-b border-gray-100/20 last:border-none">
+          <div className="w-full">
+            <div
+              className={`flex items-center justify-between px-4 py-3 cursor-pointer
+                ${activeItemId === item.href ? "bg-white bg-opacity-30 backdrop-blur-xl text-green3" : ""}
+                ${onTop ? "text-white hover:text-green2" : "text-black hover:text-green2"}
+              `}
+              onClick={() => {
+                if (item.subNav && item.subNav.length > 0) {
+                  toggleSubmenu(item.id.toString());
+                } else {
+                  handleItemClick(item.href);
+                }
+              }}
+            >
+              <Link href={item?.href} className="font transition-all duration-300">{item.label}</Link>
+              {item.subNav && item.subNav.length > 0 && (
+                <IoIosArrowDown 
+                  className={`transition-transform duration-300 ${
+                    openSubmenu === item.id.toString() ? "rotate-0" : "rotate-180"
+                  }`}
+                />
+              )}
+            </div>
+
+            {/* Submenu */}
+            {item.subNav && openSubmenu === item.id.toString() && (
+              <div className={`w-full ${
+                onTop ? "bg-black bg-opacity-20 backdrop-blur-[7px]" : "bg-white"
+              }`}>
+                {item.subNav.map((subItem: NavItem) => (
+                  <Link
+                    key={subItem.id}
+                    href={subItem.href || "#"}
+                    className={`block px-8 py-2 transition-all duration-300
+                      ${activeItemId === subItem.href ? "bg-white bg-opacity-30 backdrop-blur-xl text-green3" : ""}
+                      ${onTop ? "text-white hover:text-green2" : "text-black hover:text-green2"}
+                    `}
+                    onClick={() => handleItemClick(subItem.href)}
+                  >
+                    <span className="whitespace-nowrap">{subItem.label}</span>
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </li>
       ))}
     </ul>
-  );
-};
-
-interface SingleNavItemProps {
-  item: NavItem;
-  setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  activeItemId: string | null;
-  onItemClick: (itemId: string, href: string) => void;  // Update this line
-}
-
-const SingleNavItem: React.FC<SingleNavItemProps> = ({ 
-  item, 
-  activeItemId, 
-  onItemClick 
-}) => {
-  const [isItemOpen, setItemOpen] = useState(false);
-
-  const toggleItem = () => {
-    setItemOpen(!isItemOpen);
-    onItemClick(item.id.toString(), item.href);  // Update this line
-  };
-
-  // ... rest of the component rewhites the same
-
-  
-
-  return (
-    <>
-      <Link
-        onClick={toggleItem}
-        href={item.href ?? "#"}
-        className={`relative px-5 py-3 transition-all border-b-2 border-zinc-200 hover:bg-green1 hover:text-white ${activeItemId === item.id.toString() ? 'text-green3' : 'text-black'}`}
-      >
-       
-      </Link>
-
-      {isItemOpen && item.subNav && item.subNav.length !== 0 && (
-        <div className="z-10 w-auto flex-col gap-1 rounded-lg bg-white py-3 transition-all flex">
-          {item.subNav.map((ch, i) => (
-            <Link
-              key={i}
-              href={ch.href ?? "#"}
-              className={`flex cursor-pointer items-center py-1 pl-6 pr-8 hover:bg-green2 hover:text-white ${activeItemId === ch.id.toString() ? 'text-green2' : 'text-blue-950'}`}
-              onClick={() => onItemClick(ch.id.toString(), ch.href)}  // Update this line
-            >
-              {/* ... */}
-            </Link>
-          ))}
-        </div>
-      )}
-    </>
   );
 };
 

@@ -1,7 +1,6 @@
 import Blogdetail from '@/components/blogs/blogdetail'
-import Blogsection from '@/components/blogs/Blogs'
 import Banner from '@/components/global/banner'
-import { blogBanner, blogData } from '@/data/homeData'
+import { blogBanner } from '@/data/homeData'
 import React from 'react'
 
 export default function BlogDetail() {

@@ -36,9 +36,9 @@ export default function Servicesection({data}:any) {
               <h3 className="text-xl font-bold  my-4 text-zinc-800">
                 {cards.title}
               </h3>
-              <p className="text-zinc-600 text-sm text-justify">{cards.text}</p><br />
+              <p className="text-zinc-600 text-sm sm:text-base text-justify">{cards.text}</p><br />
              <div className="w-full text-center"> <Link 
-                  href={cards.slug || "services/detail"}
+                  href={cards.slug }
                   className=" duration-500 !min-w-full !mx-auto group-hover:bg-zinc-800 text-white px-16 bg-green3  text-center -mb-3 py-2  text-base  font-bold" >
                   Know More
                 </Link></div><br/>

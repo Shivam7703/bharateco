@@ -26,7 +26,7 @@ export default function Blogsection({data}:any) {
             className="md:mb-12 w-[50%] md:w-[31%] sm:p-4 p-1  rounded-xl  "
           >
             <div className=" w-full  h-full overflow-hidden  group  shadow-xl bg-white rounded-sm sm:rounded-2xl">
-              <div className="relative overflow-hidden w-full sm:h-60 h-40">
+              <div className="relative overflow-hidden w-full sm:h-60 h-36">
                 <Image
                   src={cards.img}
                   alt=""
@@ -38,10 +38,10 @@ export default function Blogsection({data}:any) {
                 {cards.date}
               </div>
 
-              <h3 className="sm:text-xl font-medium !leading-[1.2] text-base sm:font-bold mt-4 text-zinc-800 group-hover:text-green2">
+              <h3 className="sm:text-xl !leading-[1.2] text-base sm:font-bold mt-4 text-zinc-800 group-hover:text-green2">
                 {cards.title}
               </h3>
-              <p className="sm:hidden text-xs mt-2 text-zinc-600"> {cards.date}</p>
+              <p className="sm:hidden text-xs  mt-2 text-zinc-600"> {cards.date}</p>
               <p className="text-zinc-600 mt-2 text-sm max-sm:hidden">{cards.text}</p><br />
               <Link 
                   href={"blogs/details"}

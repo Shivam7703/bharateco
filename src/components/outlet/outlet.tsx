@@ -84,7 +84,7 @@ export default function Outlet() {
         {/* Mobile Menu Toggle Button */}
         <div
           onClick={toggleMenu}
-          className="float-right text-black text-4xl md:hidden font-bold duration-300"
+          className="w-full flex justify-end text-4xl md:hidden font-bold"
         >
           {!show ? (
             <ImMenu className="text-green3" />

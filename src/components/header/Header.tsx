@@ -122,7 +122,7 @@ const Header = ({ header }: any) => {
         }`}>
           <MenuMobile
           onTop={isAtTop}
-            navItemsArray={navItems}
+            // navItemsArray={navItems}
             setIsMobileMenuOpen={setIsMobileMenuOpen}
             activeItemId={activeItem}
             onItemClick={handleNavItemClick}

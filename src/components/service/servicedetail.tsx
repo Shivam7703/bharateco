@@ -3,7 +3,7 @@ import { banner } from "@/assets";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Servicedetail() {
+export default function Servicedetail({data} :any) {
 
 
   return (
@@ -11,43 +11,34 @@ export default function Servicedetail() {
     
      <div className="md:w-[66%] shadow-lg w-full p-5 text-zinc-800 md:space-y-12 space-y-4 max-md:mt-5">
  
-        <h3 className="text-2xl md:text-5xl font-bold ">BIO-COAL</h3>
-        <p className="text-lg font-semibold text-zinc-700">Biocoal, also known as torrefied biomass or black Biomass Briquette/pellets, is a renewable energy product obtained by thermally treating biomass, such as wood chips, straw, or other plant material, in the absence of air. The process, known as torrefaction, involves heating the biomass at temperatures between 200-300°C in an oxygen-free environment, which causes the material to release water, volatile organic compounds, and other impurities, leaving behind a dry, high-energy-density product that is more resistant to water, rot, and combustion than raw biomass.
+        <h3 className="text-2xl md:text-5xl font-bold ">{data.title1}</h3>
+        <p className="text-lg font-semibold text-zinc-700">{data.para1}
         </p>
-        <Image src={banner} alt="service" className="w-full h-full" />
-        <p className="text-lg font-semibold text-zinc-700">Biocoal has several advantages over traditional biomass fuels, including higher energy content, lower moisture content, and improved handling and storage properties. It can be used as a direct replacement for coal in power plants, industrial boilers, and other combustion processes, without the need for significant modifications to existing infrastructure. Biocoal also has a lower carbon footprint than fossil fuels, as it is made from renewable biomass, and can help to reduce greenhouse gas emissions and mitigate climate change.
-
+        <Image src={data.img1} alt="service" className="w-full h-full" />
+        <p className="text-lg font-semibold text-zinc-700">{data.para2}
 </p>
     
 
-        <h3 className="md:text-4xl text-2xl font-bold">IS THERE A FUTURE BEYOND COAL?
+        <h3 className="md:text-4xl text-2xl font-bold">{data.title2}
         </h3>
-        <p className="text-lg font-semibold text-zinc-700">In the fast-developing world, coal is the largest contributor to the human-made increase of CO2 in the atmosphere. Its environmental impact spreads far across many areas, from air pollution, water, and waste management, up to the increased land uses.
-        In the face of greenhouse gas emissions, industries are seeking a new way to manage their environmental impact and reduce the carbon footprint of production. In this article, we are focusing on the biocoal as an emerging trend to replace the fossil coals in the industry, and specifically in the metallurgic industry.</p>
-        <p className="text-lg font-semibold text-zinc-700">The demand for biocoal in India is expected to grow in the coming years, driven by several factors including increasing energy demand, rising concerns about air pollution, and government policies promoting the use of renewable energy sources. According to a report by the International Energy Agency, India’s demand for biomass-based electricity is expected to increase from 80 TWh in 2019 to 224 TWh in 2040.
+        <p className="text-lg font-semibold text-zinc-700">{data.para3}</p>
+        <p className="text-lg font-semibold text-zinc-700">{data.para4}
         </p>
 
-        <p className="text-lg font-semibold text-zinc-700">However, the growth of the biocoal industry in India will depend on several factors, including the availability of biomass feedstock’s, the development of efficient and cost-effective production technologies, and the establishment of a supportive policy and regulatory environment. Nevertheless, biocoal has the potential to play an important role in India’s energy mix, and its demand is likely to increase in the years to come.
+        <p className="text-lg font-semibold text-zinc-700">{data.para5}
         </p>
 
         <div className=" w-full max-md:mt-5 h-full relative p-8 max-lg:mt-10">
       
-        <div className="sm:w-7 sm:h-7 h-4 w-4 absolute top-[35%] left-[17%] puls2 rounded-full animate-pulse-shadow shadow-lg">
-</div>
-
-<div className="sm:w-7 sm:h-7 h-4 w-4 absolute bottom-[22%] left-[28%] puls2 rounded-full animate-pulse-shadow shadow-lg">
-</div>
-
-<div className="sm:w-7 sm:h-7 h-4 w-4 absolute top-[30%] right-[27%] puls2 rounded-full animate-pulse-shadow shadow-lg"></div>
+     
 
 
-        <Image src={banner} alt="map" className="w-full mt-4"/>
+        <Image src={data.img2} alt="map" className="w-full mt-4"/>
       </div>
-      <p className="text-lg font-semibold text-zinc-700">We always perform scheduled checks on your charging stations to ensure that we pick any signs of problems before they assume huge proportions. Every piece of wiring and mechanical structure is checked by our trained technical personnel to verify optimal performance. That is why, in case any repair work is necessary, we take care of it in order to avoid any interruption of services. 
+      <p className="text-lg font-semibold text-zinc-700">{data.para6}
       </p>
-      <p className="text-lg font-semibold text-zinc-700">For inspection and repair, we issue periodic updates or recommendations regarding the condition of your charging stations. We aim to be your operations support so that you can focus on what concerns your enterprise. When you work with us, we’ll ensure that the maintenance of your EV charging stations is efficient and timely, ensuring that our clients’ customers get the convenient and quality service they need for the growth of green mobility.
+      <p className="text-lg font-semibold text-zinc-700">{data.para7}
       </p>
-    
 </div>
 
 <div className="md:sticky top-8 md:w-[30%] w-full">
