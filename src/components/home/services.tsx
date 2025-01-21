@@ -53,8 +53,8 @@ export default function ServiceSlider() {
             {/* <Image src={bg1} alt="img"  className="w-full h-full absolute top-0 left-0 object-cover z-auto"/> */}
 
       <div className="w-full text-center flex flex-col items-center !gap-y-4 mb-8 md:mb-16">
-             {servicedata?.title1 && <h4 className='text-green3 bg-[#E1F1D8] px-7 mb-3 font-bold text-sm rounded-lg py-3 w-max'>{servicedata?.title1}</h4>}
-               {servicedata?.title2 && <h2 className='text-zinc-800 text-2xl md:text-4xl font-bold'>{servicedata?.title2}</h2>}
+             {servicedata?.title && <h4 className='text-green3 bg-[#E1F1D8] px-7 mb-3 font-bold text-sm rounded-lg py-3 w-max'>{servicedata?.title}</h4>}
+               {servicedata?.subtitle && <h2 className='text-zinc-800 text-2xl md:text-4xl font-bold'>{servicedata?.subtitle}</h2>}
                    {servicedata?.para && <p className='text-zinc-600 text-sm md:text-base max-w-4xl'>{servicedata?.para}</p>}
                    </div>
 
