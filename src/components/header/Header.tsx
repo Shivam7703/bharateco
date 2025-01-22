@@ -117,10 +117,10 @@ const Header = ({ header }: any) => {
 
       {/* Mobile Menu */}
       
-        <div className={`fixed h-screen left-0 top-20 w-full md:hidden  overflow-x-hidden duration-300 transition-all ${
+        <div className={`fixed h-screen left-0 top-20  md:hidden  overflow-x-hidden duration-300 transition-all ${
           isAtTop ? "bg-black bg-opacity-20 backdrop-blur-[7px]" : "bg-opacity-100 bg-white"
         } ${
-          isMobileMenuOpen ? "w-full" : "w-0"
+          isMobileMenuOpen ? "!w-full" : "!w-0"
         }`}>
           <MenuMobile
           onTop={isAtTop}
