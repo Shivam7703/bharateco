@@ -73,9 +73,9 @@ export default function Testimonials() {
         ))}
      
       </Swiper>
-      <div className={`${uniqueId}-next swiper-button-next !top-[63%] after:text-green2 lg:!right-40 after:font-bold max-md:hidden`}></div>
+      <div className={`${uniqueId}-next max-sm:!hidden swiper-button-next !top-[63%] after:text-green2 lg:!right-40 after:font-bold`}></div>
 
-<div className={`${uniqueId}-prev swiper-button-prev !top-[63%] after:text-green2 lg:!left-40 after:font-bold max-md:hidden`}></div>
+<div className={`${uniqueId}-prev max-sm:!hidden swiper-button-prev !top-[63%] after:text-green2 lg:!left-40 after:font-bold `}></div>
 
     </section>
   );

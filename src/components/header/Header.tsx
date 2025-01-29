@@ -85,7 +85,7 @@ const Header = ({ header }: any) => {
           <Image
             src={isAtTop ? logo2 : logo}
             alt="logo"
-            className="h-[12vw] max-h-20 w-min object-contain md:h-20"
+            className="h-[12vw] max-h-16 my-2 w-min object-contain "
           />
         </Link>
         <Menu
@@ -103,7 +103,7 @@ const Header = ({ header }: any) => {
       }`}>
         <div className="flex items-center relative cursor-pointer text-3xl justify-between w-full">
         <Link href={header?.href || "/"}>
-            <Image src={isAtTop ? logo2 : logo} alt="logo" className="w-[120px] object-contain" />
+            <Image src={isAtTop ? logo2 : logo} alt="logo" className="w-[110px] object-contain" />
           </Link>
           {isMobileMenuOpen ? (
             <VscChromeClose onClick={handleMobileMenu} className={isAtTop ? "text-white" : "text-black"} />
